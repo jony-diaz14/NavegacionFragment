@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 
 class SegundoFragment : Fragment() {
     lateinit var btnB: Button
+    lateinit var btnF: Button
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -20,6 +21,11 @@ class SegundoFragment : Fragment() {
         btnB.setOnClickListener {
             findNavController().navigate(R.id.action_segundoFragment_to_primerFragment)
         }
+        btnF = vistaB.findViewById(R.id.btn_F)
+        btnF.setOnClickListener {
+            findNavController().navigate(R.id.action_segundoFragment_to_tercerFragment)
+        }
+
         return vistaB
     }
 }

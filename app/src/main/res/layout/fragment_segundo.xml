@@ -13,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/abril_fatface"
-        android:text="hola, bienvenido al primer fragment"
+        android:text="hola, bienvenido al segundo fragment"
         android:textAlignment="center"
         android:textColor="#DDD2D2"
         android:textColorHighlight="#CF1F1F"
@@ -27,10 +27,24 @@
         android:id="@+id/btn_B"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Regresar"
+        android:text="Va al primer fragmento"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <Button
+        android:id="@+id/btn_F"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Va al tercer fragmento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.351" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

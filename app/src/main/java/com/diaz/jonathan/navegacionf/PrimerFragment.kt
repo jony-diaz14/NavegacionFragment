@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 
 class PrimerFragment : Fragment() {
     lateinit var btnA: Button
-    lateinit var btnC: Button
+    lateinit var btnD: Button
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,8 +23,8 @@ class PrimerFragment : Fragment() {
             findNavController().navigate(R.id.action_primerFragment_to_segundoFragment)
         }
 
-        btnC = vistaA.findViewById(R.id.btn_C)
-        btnC.setOnClickListener {
+        btnD = vistaA.findViewById(R.id.btn_D)
+        btnD.setOnClickListener {
             findNavController().navigate(R.id.action_primerFragment_to_tercerFragment)
         }
         return vistaA

@@ -24,7 +24,7 @@ class TercerFragment : Fragment() {
             findNavController().navigate(R.id.action_tercerFragment_to_primerFragment)
         }
 
-        btnC = vistaA.findViewById(R.id.btn_C)
+        btnC = vistaA.findViewById(R.id.btn_c)
         btnC.setOnClickListener {
             findNavController().navigate(R.id.action_tercerFragment_to_segundoFragment)
         }
