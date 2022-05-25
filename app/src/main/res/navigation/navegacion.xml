@@ -30,5 +30,12 @@
         android:id="@+id/tercerFragment"
         android:name="com.diaz.jonathan.navegacionf.TercerFragment"
         android:label="fragment_tercer"
-        tools:layout="@layout/fragment_tercer" />
+        tools:layout="@layout/fragment_tercer" >
+        <action
+            android:id="@+id/action_tercerFragment_to_primerFragment"
+            app:destination="@id/primerFragment" />
+        <action
+            android:id="@+id/action_tercerFragment_to_segundoFragment"
+            app:destination="@id/segundoFragment" />
+    </fragment>
 </navigation>
